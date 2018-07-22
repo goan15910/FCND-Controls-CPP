@@ -30,6 +30,10 @@ public:
 
   float AltitudeControl(float posZCmd, float velZCmd, float posZ, float velZ, Quaternion<float> attitude, float accelZCmd, float dt);
 
+  // Utility function
+  V3F SaturateCommand(V3F cmd, V3F maxValue);
+  float ValidateYaw(float yaw);
+
   // -------------- PARAMETERS --------------
 
   // controller gains

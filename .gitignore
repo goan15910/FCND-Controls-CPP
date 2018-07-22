@@ -26,3 +26,11 @@ bld/
 
 # manual cmake build ignores
 build/
+
+# vim .swp
+*.swp
+
+# project user data
+project/FCND-CPPSim.xcodeproj/xcuserdata*
+project/FCND-CPPSim.xcodeproj/project.xcworkspace/xcuserdata*
+project/.DS_Store

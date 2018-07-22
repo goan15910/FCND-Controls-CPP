@@ -4,7 +4,7 @@ INCLUDE QuadPhysicalParams.txt
 
 # simulation setup
 Sim.RunMode = Repeat
-Sim.EndTime = 2
+Sim.EndTime = 4
 Sim.Vehicle1 = Quad1
 Sim.Vehicle2 = Quad2
 
@@ -30,6 +30,11 @@ Commands.5=AddGraph2.Quad2.Yaw
 Commands.6=AddGraph1.WindowThreshold(Quad1.Pos.X,0.1,1.25)
 Commands.7=AddGraph1.WindowThreshold(Quad2.Pos.X,0.1,1.25)
 Commands.8=AddGraph2.WindowThreshold(Quad2.Yaw,0.1,1.0)
+Commands.9=AddGraph2.Quad1.Pitch
+Commands.10=AddGraph2.Quad2.Pitch
+Commands.11=AddGraph2.WindowThreshold(Quad1.Pitch,0.1,1.)
+Commands.12=AddGraph2.WindowThreshold(Quad2.Pitch,0.1,1.)
+
 
 INCLUDE QuadControlParams.txt
 INCLUDE Simulation.txt
